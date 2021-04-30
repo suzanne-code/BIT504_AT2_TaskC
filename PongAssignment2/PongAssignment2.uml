@@ -5,8 +5,160 @@
       <contents xmi:type="ecore:EAnnotation" xmi:id="_EpPYUal8EeuoWKHTep5eHg" source="codegen">
         <details xmi:id="_EpPYUql8EeuoWKHTep5eHg" key="codegenDirectory" value="/PongAssignment2/src"/>
         <details xmi:id="_EpRNgKl8EeuoWKHTep5eHg" key="observedFolders" value="/PongAssignment2/src"/>
+        <details xmi:id="_J-vdYKl8EeuoWKHTep5eHg" key="AssociatedSourceCode" value="/PongAssignment2/src/Ball.java;4063498773/1;/PongAssignment2/src/Paddle.java;1875942929/1;"/>
       </contents>
     </eAnnotations>
+    <elementImport xmi:id="_08HisKl8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_08Hisal8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_08Hisql8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_08His6l8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_08HitKl8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_08Hital8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_08Hitql8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_08Hit6l8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_08IJwKl8EeuoWKHTep5eHg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_08G7oKl8EeuoWKHTep5eHg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_08G7oal8EeuoWKHTep5eHg" name="awt">
+        <packagedElement xmi:type="uml:Class" xmi:id="_08KmAKl8EeuoWKHTep5eHg" name="Color"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_J9A_EKl8EeuoWKHTep5eHg" name="Ball">
+      <generalization xmi:id="_08L0Iql8EeuoWKHTep5eHg" general="_08L0IKl8EeuoWKHTep5eHg"/>
+      <ownedAttribute xmi:id="_08MbMKl8EeuoWKHTep5eHg" name="BALL_WIDTH" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_08MbMal8EeuoWKHTep5eHg" value="25"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_08MbMql8EeuoWKHTep5eHg" name="BALL_HEIGHT" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_08MbM6l8EeuoWKHTep5eHg" value="25"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_08MbNKl8EeuoWKHTep5eHg" name="BALL_COLOUR" visibility="private" isLeaf="true" isStatic="true" type="_08KmAKl8EeuoWKHTep5eHg" isReadOnly="true" association="_08NCRKl8EeuoWKHTep5eHg">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_08MbNal8EeuoWKHTep5eHg" value="Color.WHITE"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_08NCQKl8EeuoWKHTep5eHg" name="Ball" specification="_08IJwal8EeuoWKHTep5eHg">
+        <ownedParameter xmi:id="_08NCQal8EeuoWKHTep5eHg" name="panelWidth">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_08NCQql8EeuoWKHTep5eHg" name="panelHeight">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_08NCQ6l8EeuoWKHTep5eHg" type="_J9A_EKl8EeuoWKHTep5eHg" direction="return"/>
+        <language>java</language>
+        <body>setWidth(BALL_WIDTH);&#xD;
+		setHeight(BALL_HEIGHT);&#xD;
+		setColour(BALL_COLOUR);&#xD;
+		setInitialPosition(panelWidth / 2 - (getWidth() / 2), panelHeight / 2 - (getHeight() / 2));&#xD;
+		resetToInitialPosition();&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_08IJwal8EeuoWKHTep5eHg" name="Ball" method="_08NCQKl8EeuoWKHTep5eHg">
+        <eAnnotations xmi:id="_08IJxal8EeuoWKHTep5eHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_08IJxql8EeuoWKHTep5eHg" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_08IJwql8EeuoWKHTep5eHg" name="panelWidth">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_08IJw6l8EeuoWKHTep5eHg" name="panelHeight">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_08IJxKl8EeuoWKHTep5eHg" type="_J9A_EKl8EeuoWKHTep5eHg" direction="return"/>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_08L0IKl8EeuoWKHTep5eHg" name="Sprite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QVPFYKl8EeuoWKHTep5eHg" name="Paddle">
+      <generalization xmi:id="_6EB3s6l8EeuoWKHTep5eHg" general="_HqfQ4Kl-EeuoWKHTep5eHg"/>
+      <ownedAttribute xmi:id="_6ECewKl8EeuoWKHTep5eHg" name="PADDLE_WIDTH" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_6ECewal8EeuoWKHTep5eHg" value="10"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6ECewql8EeuoWKHTep5eHg" name="PADDLE_HEIGHT" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_6ECew6l8EeuoWKHTep5eHg" value="100"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6ECexKl8EeuoWKHTep5eHg" name="PADDLE_COLOUR" visibility="private" isLeaf="true" isStatic="true" type="_08KmAKl8EeuoWKHTep5eHg" isReadOnly="true" association="_6EDs4Kl8EeuoWKHTep5eHg">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_6EDF0Kl8EeuoWKHTep5eHg" value="Color.WHITE"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6EDF0al8EeuoWKHTep5eHg" name="DISTANCE_FROM_EDGE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_6EDF0ql8EeuoWKHTep5eHg" value="40"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6EDF06l8EeuoWKHTep5eHg" name="Paddle" specification="_6EBQoal8EeuoWKHTep5eHg">
+        <ownedParameter xmi:id="_HqgfAKl-EeuoWKHTep5eHg" name="player" type="_Hqf38al-EeuoWKHTep5eHg"/>
+        <ownedParameter xmi:id="_HqgfAal-EeuoWKHTep5eHg" name="panelWidth">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_HqgfAql-EeuoWKHTep5eHg" name="panelHeight">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_HqgfA6l-EeuoWKHTep5eHg" type="_QVPFYKl8EeuoWKHTep5eHg" direction="return"/>
+        <language>java</language>
+        <body>setWidth(PADDLE_WIDTH);&#xD;
+		setHeight(PADDLE_HEIGHT);&#xD;
+		setColour(PADDLE_COLOUR);&#xD;
+		int xPos;&#xD;
+		if(player == Player.One) {&#xD;
+			xPos = DISTANCE_FROM_EDGE;&#xD;
+		} else {&#xD;
+			xPos = panelWidth - DISTANCE_FROM_EDGE - getWidth();&#xD;
+		}&#xD;
+		setInitialPosition(xPos, panelHeight / 2 - (getHeight() / 2));&#xD;
+		resetToInitialPosition();&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6EDF2Kl8EeuoWKHTep5eHg" name="getDistanceFromEdge" specification="_6D7xEKl8EeuoWKHTep5eHg">
+        <ownedParameter xmi:id="_6EDF2al8EeuoWKHTep5eHg" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return DISTANCE_FROM_EDGE;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_6D7xEKl8EeuoWKHTep5eHg" name="getDistanceFromEdge" method="_6EDF2Kl8EeuoWKHTep5eHg">
+        <ownedParameter xmi:id="_6D8_MKl8EeuoWKHTep5eHg" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_6EBQoal8EeuoWKHTep5eHg" name="Paddle" method="_6EDF06l8EeuoWKHTep5eHg">
+        <eAnnotations xmi:id="_6EB3sal8EeuoWKHTep5eHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_6EB3sql8EeuoWKHTep5eHg" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_6EBQoql8EeuoWKHTep5eHg" name="player" type="_Hqf38al-EeuoWKHTep5eHg"/>
+        <ownedParameter xmi:id="_6EBQo6l8EeuoWKHTep5eHg" name="panelWidth">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_6EBQpKl8EeuoWKHTep5eHg" name="panelHeight">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_6EB3sKl8EeuoWKHTep5eHg" type="_QVPFYKl8EeuoWKHTep5eHg" direction="return"/>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_HqfQ4Kl-EeuoWKHTep5eHg" name="Sprite"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Hqf38al-EeuoWKHTep5eHg" name="Player"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_08NCRKl8EeuoWKHTep5eHg" name="" memberEnd="_08NCRal8EeuoWKHTep5eHg _08MbNKl8EeuoWKHTep5eHg">
+      <ownedEnd xmi:id="_08NCRal8EeuoWKHTep5eHg" name="" type="_J9A_EKl8EeuoWKHTep5eHg" association="_08NCRKl8EeuoWKHTep5eHg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6EDs4Kl8EeuoWKHTep5eHg" name="" memberEnd="_6EDs4al8EeuoWKHTep5eHg _6ECexKl8EeuoWKHTep5eHg">
+      <ownedEnd xmi:id="_6EDs4al8EeuoWKHTep5eHg" name="" type="_QVPFYKl8EeuoWKHTep5eHg" association="_6EDs4Kl8EeuoWKHTep5eHg"/>
+    </packagedElement>
     <profileApplication xmi:id="_EpP_YKl8EeuoWKHTep5eHg">
       <eAnnotations xmi:id="_EpP_Yal8EeuoWKHTep5eHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
@@ -17,4 +169,10 @@
   <UMLLabProfile:TargetLanguage xmi:id="_EpQmcKl8EeuoWKHTep5eHg" base_Package="_EmBFMKl8EeuoWKHTep5eHg">
     <languageName>java</languageName>
   </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_08LNEKl8EeuoWKHTep5eHg" base_Element="_08KmAKl8EeuoWKHTep5eHg"/>
+  <UMLLabProfile:Reference xmi:id="_08L0Ial8EeuoWKHTep5eHg" base_Element="_08L0IKl8EeuoWKHTep5eHg"/>
+  <UMLLabProfile:Reference xmi:id="_08NpUKl8EeuoWKHTep5eHg" base_Element="_08NCRKl8EeuoWKHTep5eHg"/>
+  <UMLLabProfile:Reference xmi:id="_6EET8Kl8EeuoWKHTep5eHg" base_Element="_6EDs4Kl8EeuoWKHTep5eHg"/>
+  <UMLLabProfile:Reference xmi:id="_Hqf38Kl-EeuoWKHTep5eHg" base_Element="_HqfQ4Kl-EeuoWKHTep5eHg"/>
+  <UMLLabProfile:Reference xmi:id="_Hqf38ql-EeuoWKHTep5eHg" base_Element="_Hqf38al-EeuoWKHTep5eHg"/>
 </xmi:XMI>
